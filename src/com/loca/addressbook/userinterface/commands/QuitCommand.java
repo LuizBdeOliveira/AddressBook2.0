@@ -12,6 +12,8 @@ public class QuitCommand implements Command {
     private Application application;
     private List<String> parameters;
     private ConsolePrinter consolePrinter;
+    public final static String NAME = "quit";
+    public final static String DESCRIPTION = "quitting application";
 
     public QuitCommand(ConsolePrinter consolePrinter, List<String> parameters, Application application) {
         this.parameters = parameters;

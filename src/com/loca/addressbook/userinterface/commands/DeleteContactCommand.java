@@ -13,6 +13,8 @@ public class DeleteContactCommand implements Command {
     private ConsolePrinter consolePrinter;
     private Registry registry;
     private List<String> parameters;
+    public final static String NAME = "delete";
+    public final static String DESCRIPTION = "deletes a contact";
 
     public DeleteContactCommand (ConsolePrinter consolePrinter, Registry registry, List<String> parameters) {
     	this.consolePrinter = consolePrinter;

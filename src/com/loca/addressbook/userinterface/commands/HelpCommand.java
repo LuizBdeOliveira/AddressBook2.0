@@ -11,6 +11,8 @@ public class HelpCommand implements Command {
     private CommandType commandType = CommandType.HELP;
     private List<String> parameters;
     private ConsolePrinter consolePrinter;
+    public final static String NAME = "help";
+    public final static String DESCRIPTION = "displaying help menu";
 
     public HelpCommand (ConsolePrinter consolePrinter, List<String> parameters) {
         this.parameters = parameters;

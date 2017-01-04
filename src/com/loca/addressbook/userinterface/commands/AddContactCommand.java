@@ -12,6 +12,8 @@ public class AddContactCommand implements Command {
 	private Registry registry;
 	private List<String> parameters;
 	private ConsolePrinter consolePrinter;
+	public final static String NAME = "add";
+	public final static String DESCRIPTION = "adds a contact";
 	
 	public AddContactCommand (ConsolePrinter consolePrinter, Registry registry, List<String> parameters) {
 	    this.consolePrinter = consolePrinter;
