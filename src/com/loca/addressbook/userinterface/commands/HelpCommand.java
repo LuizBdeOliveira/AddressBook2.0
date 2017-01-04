@@ -13,6 +13,7 @@ public class HelpCommand implements Command {
     private ConsolePrinter consolePrinter;
     public final static String NAME = "help";
     public final static String DESCRIPTION = "displaying help menu";
+    HelpMenu menu;
 
     public HelpCommand (ConsolePrinter consolePrinter, List<String> parameters) {
         this.parameters = parameters;
@@ -34,25 +35,9 @@ public class HelpCommand implements Command {
     @Override
     public void execute() throws InvalidCommandParameterException {
         validate();
-        String helpText = makeHelpText();
-        showHelpText(helpText);
+        menu = new HelpMenu();
+        consolePrinter.print(menu.getMenu());
 
-    }
-
-    private String makeHelpText() {
-        StringBuilder helpText = new StringBuilder(100);
-        for (CommandType commandType: CommandType.values()) {
-            helpText.append(commandType.getCommandName());
-            helpText.append(TAB);
-            helpText.append(commandType.getDescription());
-            helpText.append(NEW_LINE);
-        }
-        return helpText.toString();
-    }
-
-
-    private void showHelpText(String helpText) {
-        consolePrinter.print(helpText);
     }
 
     private void validate() throws InvalidCommandParameterException {

@@ -1,4 +1,4 @@
-package com.loca.addressbook.userinterface;
+package com.loca.addressbook.userinterface.commands;
 
 import com.loca.addressbook.userinterface.commands.*;
 
