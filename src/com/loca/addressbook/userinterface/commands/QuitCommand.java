@@ -22,6 +22,16 @@ public class QuitCommand implements Command {
     }
 
     @Override
+    public String getName() {
+        return NAME;
+    }
+
+    @Override
+    public String getDescription() {
+        return DESCRIPTION;
+    }
+
+    @Override
     public void execute() throws InvalidCommandParameterException {
         validate();
         consolePrinter.print(commandType.getSuccessMessage());
