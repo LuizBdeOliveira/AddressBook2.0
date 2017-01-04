@@ -18,6 +18,8 @@ public class ListCommand implements Command {
 	private Registry registry;
 	private RemoteRegistry remoteRegistry;
 	private List<String> parameters;
+	public final static String NAME = "list";
+	public final static String DESCRIPTION = "list contacts";
 	
 	public ListCommand (ConsolePrinter consolePrinter, Registry registry, RemoteRegistry remoteRegistry, List<String> parameters) {
 		this.consolePrinter = consolePrinter;
