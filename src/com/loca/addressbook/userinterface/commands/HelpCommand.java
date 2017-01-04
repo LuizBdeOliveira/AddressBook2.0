@@ -2,12 +2,12 @@ package com.loca.addressbook.userinterface.commands;
 
 import com.loca.addressbook.exceptions.InvalidCommandParameterException;
 import com.loca.addressbook.userinterface.ConsolePrinter;
+import com.loca.addressbook.userinterface.HelpMenu;
 
 import java.util.List;
 
 public class HelpCommand implements Command {
-    private static final String NEW_LINE = "\n";
-    private static final String TAB = "\t";
+
     private CommandType commandType = CommandType.HELP;
     private List<String> parameters;
     private ConsolePrinter consolePrinter;

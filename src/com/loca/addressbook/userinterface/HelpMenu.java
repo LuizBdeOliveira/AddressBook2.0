@@ -1,4 +1,4 @@
-package com.loca.addressbook.userinterface.commands;
+package com.loca.addressbook.userinterface;
 
 import com.loca.addressbook.userinterface.commands.*;
 
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class HelpMenu {
 
-    private ArrayList<Command> commands;
+    private ArrayList<Command> commands = new ArrayList<>();
     private String menu = "";
 
     public void ListCommands(){
