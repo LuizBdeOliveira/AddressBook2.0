@@ -28,6 +28,10 @@ public class SearchCommand implements Command {
 		this.parameters = parameters;
 	}
 
+	public SearchCommand(){
+
+	}
+
 	@Override
 	public String getName() {
 		return NAME;

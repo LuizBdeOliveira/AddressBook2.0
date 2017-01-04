@@ -20,6 +20,8 @@ public class QuitCommand implements Command {
         this.consolePrinter = consolePrinter;
         this.application = application;
     }
+    public QuitCommand(){
+    }
 
     @Override
     public String getName() {

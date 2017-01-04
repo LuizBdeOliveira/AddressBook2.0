@@ -28,6 +28,8 @@ public class ListCommand implements Command {
 		this.parameters = parameters;
 	}
 
+	public ListCommand(){}
+
     @Override
     public void execute() throws InvalidCommandParameterException {
     	validate();
