@@ -18,12 +18,24 @@ public class SearchCommand implements Command {
 	private Registry registry;
 	private RemoteRegistry remoteRegistry;
 	private List<String> parameters;
+	public final static String NAME = "search";
+	public final static String DESCRIPTION = "search contacts";
 	
 	public SearchCommand (ConsolePrinter consolePrinter, Registry registry, RemoteRegistry remoteRegistry, List<String> parameters) {
 		this.consolePrinter = consolePrinter;
 		this.registry = registry;
 		this.remoteRegistry = remoteRegistry;
 		this.parameters = parameters;
+	}
+
+	@Override
+	public String getName() {
+		return NAME;
+	}
+
+	@Override
+	public String getDescription() {
+		return DESCRIPTION;
 	}
 
     @Override

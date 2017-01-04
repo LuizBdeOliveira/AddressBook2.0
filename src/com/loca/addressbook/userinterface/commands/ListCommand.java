@@ -34,6 +34,16 @@ public class ListCommand implements Command {
     	listContacts();
     }
 
+	@Override
+	public String getName() {
+		return NAME;
+	}
+
+	@Override
+	public String getDescription() {
+		return DESCRIPTION;
+	}
+
 	private void listContacts() {
 		String output;
 		List<Contact> contacts = new ArrayList<>();
