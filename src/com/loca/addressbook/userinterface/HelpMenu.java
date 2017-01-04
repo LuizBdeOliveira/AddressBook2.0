@@ -27,7 +27,6 @@ public class HelpMenu {
 
 
     public HelpMenu(){
-
         commands = getCommands();
         build();
     }
