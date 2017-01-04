@@ -21,6 +21,16 @@ public class AddContactCommand implements Command {
 		this.parameters = parameters;
 	}
 
+	@Override
+	public String getName() {
+		return NAME;
+	}
+
+	@Override
+	public String getDescription() {
+		return DESCRIPTION;
+	}
+
     @Override
     public void execute() throws InvalidCommandParameterException {
     	validate();
