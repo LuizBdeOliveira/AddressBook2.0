@@ -24,7 +24,7 @@ public class HelpMenu {
     public ArrayList<Command> getCommands(){
         return commands;
     }
-    
+
     private String formattingHelpMenu(Command command){
         return command.getName() + "\t\t- " + command.getDescription();
     }
