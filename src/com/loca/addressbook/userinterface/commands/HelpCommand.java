@@ -19,6 +19,8 @@ public class HelpCommand implements Command {
         this.consolePrinter = consolePrinter;
     }
 
+    public HelpCommand(){}
+
     @Override
     public String getName() {
         return NAME;

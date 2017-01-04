@@ -22,6 +22,7 @@ public class DeleteContactCommand implements Command {
         this.parameters = parameters;
     }
 
+    public DeleteContactCommand(){}
     @Override
     public String getName() {
         return NAME;

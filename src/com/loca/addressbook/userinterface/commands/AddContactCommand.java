@@ -21,6 +21,8 @@ public class AddContactCommand implements Command {
 		this.parameters = parameters;
 	}
 
+	public AddContactCommand(){}
+
 	@Override
 	public String getName() {
 		return NAME;
