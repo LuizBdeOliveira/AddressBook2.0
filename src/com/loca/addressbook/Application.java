@@ -12,11 +12,6 @@ import com.loca.addressbook.userinterface.CommandLineInterface;
 import com.loca.addressbook.userinterface.Console;
 
 public class Application {
-
-    public static void main(String[] args) {
-        Application application = new Application();
-        application.start();
-    }
 	
 	private static final String HOSTNAME_1 = "172.20.200.157";
 	private static final String HOSTNAME_2 = "172.20.200.173";
