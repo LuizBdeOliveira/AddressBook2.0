@@ -9,10 +9,8 @@ public class HelpMenu {
 
     private ArrayList<Command> commands;
     private String menu = "";
-    private ArrayList<Command>;
 
     public void ListCommands(){
-        commands = new ArrayList<>();
         commands.add(new AddContactCommand());
         commands.add(new DeleteContactCommand());
         commands.add(new SearchCommand());
@@ -20,6 +18,7 @@ public class HelpMenu {
         commands.add(new HelpCommand());
         commands.add(new ListCommand());
         commands.add(new QuitCommand());
+
     }
 
     public ArrayList<Command> getCommands(){
@@ -29,7 +28,7 @@ public class HelpMenu {
 
     public HelpMenu(){
 
-        commands = allCommands.getCommands();
+        commands = getCommands();
         build();
     }
 
